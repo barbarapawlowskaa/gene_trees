@@ -12,7 +12,7 @@ We selected 10 bacteria species. Crucially, we ensured that the chosen taxa have
 
 ## Step 2: 16S rRNA sequence retrieval
 
-The fetch_16S_bacteria.py script enables fetching 10 sequences NCBI database.
+The fetch_16S_bacteria.py script enables fetching 10 sequences from NCBI database.
 
     python3 fetch_16S_bacteria.py 
     
