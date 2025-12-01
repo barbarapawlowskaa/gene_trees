@@ -46,11 +46,12 @@ These external command-line tools are required for alignment and tree building:
 
 Programming Environments & Libraries:
 
+    
     Python 3: Required for .py scripts.
     Biopython: Necessary Python library for handling sequence and tree files.
     R and RStudio: Required for running the analysis and visualization script (trees_visualization.rmd).
 
-    Installation:
+Installation:
 
     pip install biopython
 
