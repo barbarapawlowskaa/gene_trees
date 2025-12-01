@@ -31,7 +31,7 @@ The iqtree2.sh bash script enables building a tree for 16S rRNA sequences.
     
 ## Step 5: Trees visualization and comparison
 
-The trees_visualization.rmd script for R enables visualization of both trees and computes the Robinson-Fould metric to quantify topological differences.
+The trees_visualization.rmd script for R enables visualization of both trees and computes the Robinson-Foulds distance to quantify topological differences.
 
 
 # Installation 
