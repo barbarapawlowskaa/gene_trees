@@ -14,7 +14,7 @@ We selected 10 bacteria species. Crucially, we ensured that the chosen taxa have
 
 The fetch_16S_bacteria.py script enables fetching 10 sequences NCBI database.
 
-    ```bash
+    ```
     python3 fetch_16S_bacteria.py 
     ```
     
@@ -22,7 +22,7 @@ The fetch_16S_bacteria.py script enables fetching 10 sequences NCBI database.
 
 The gen_lab4_aligment.py script performs the alignment, which is critical for accurate phylogenetic reconstruction.
 
-    ```bash
+    ```
     python3 gen_lab4_aligment.py
     ```
     
@@ -30,7 +30,7 @@ The gen_lab4_aligment.py script performs the alignment, which is critical for ac
 
 The iqtree2.sh bash script enables building a tree for 16S rRNA sequences.
 
-    ```bash
+    ```
     bash iqtree2.sh
     ```
     
@@ -40,7 +40,7 @@ The trees_visualization.rmd script for R enables visualization of both trees and
 
 # Instalation
 
-```bash
-git clone [https://github.com/barbarapawlowskaa/git](https://github.com/barbarapawlowskaa/gene_trees)
+```
+git clone https://github.com/barbarapawlowskaa/gene_trees
 cd gene_trees
 ```
