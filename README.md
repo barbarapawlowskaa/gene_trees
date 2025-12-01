@@ -34,10 +34,10 @@ The iqtree2.sh bash script enables building a tree for 16S rRNA sequences.
 The trees_visualization.rmd script for R enables visualization of both trees and computes the Robinson-Fould metric to quantify topological differences.
 
 
-# Instalation 
+# Installation 
 To successfully run the analysis scripts, the following software and libraries must be installed and accessible from your system's PATH.
 
-## Bioinformatics Software Tools (CLT)
+## Bioinformatics Software Tools 
 
 These external command-line tools are required for alignment and tree building:
 
@@ -50,7 +50,8 @@ Programming Environments & Libraries:
     Python 3: Required for .py scripts.
     Biopython: Necessary Python library for handling sequence and tree files.
     R and RStudio: Required for running the analysis and visualization script (trees_visualization.rmd).
-
+        - Required R packages: ape, TreeDist
+    
 Installation:
 
     pip install biopython
