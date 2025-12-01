@@ -59,6 +59,6 @@ Installation:
 ## Repository installation
 
 
-git clone https://github.com/barbarapawlowskaa/gene_trees
-cd gene_trees
+    git clone https://github.com/barbarapawlowskaa/gene_trees
+    cd gene_trees
 
