@@ -37,7 +37,7 @@ The trees_visualization.rmd script for R enables visualization of both trees and
 # Instalation 
 To successfully run the analysis scripts, the following software and libraries must be installed and accessible from your system's PATH.
 
-# Bioinformatics Software Tools (CLT)
+## Bioinformatics Software Tools (CLT)
 
 These external command-line tools are required for alignment and tree building:
 
@@ -48,16 +48,15 @@ Programming Environments & Libraries:
 
     Python 3: Required for .py scripts.
     Biopython: Necessary Python library for handling sequence and tree files.
+    R and RStudio: Required for running the analysis and visualization script (trees_visualization.rmd).
 
-Installation:
+    Installation:
 
     pip install biopython
 
-    R and RStudio: Required for running the analysis and visualization script (trees_visualization.rmd).
+## Repository installation
 
-# Instalation
 
-```
 git clone https://github.com/barbarapawlowskaa/gene_trees
 cd gene_trees
-```
+
