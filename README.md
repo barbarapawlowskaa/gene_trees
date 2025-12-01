@@ -55,6 +55,8 @@ Programming Environments & Libraries:
 Installation:
 
     pip install biopython
+    brew install mafft
+    brew install iqtree2
 
 ## Repository installation
 
