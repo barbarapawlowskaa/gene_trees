@@ -4,7 +4,7 @@ This repository contains the scripts and results for a comparative bioinformatic
 # Step-by-step analysis
 Follow these steps in order to reproduce the phylogenetic comparison:
 
-## Step 1: species selection and TimeTree data acquisition
+## Step 1: Species selection and TimeTree data acquisition
 
 We selected 10 bacteria species. Crucially, we ensured that the chosen taxa have sufficient genetic distance for meaningful speciation time estimation. For comparison with our generated phylogenic tree, we downloaded Newick tree for the same 10 species from:
 
@@ -37,6 +37,30 @@ The iqtree2.sh bash script enables building a tree for 16S rRNA sequences.
 ## Step 5: Trees visualization and comparison
 
 The trees_visualization.rmd script for R enables visualization of both trees and computes the Robinson-Fould metric to quantify topological differences.
+
+
+# Instalation 
+To successfully run the analysis scripts, the following software and libraries must be installed and accessible from your system's PATH.
+
+# Bioinformatics Software Tools (CLT)
+
+These external command-line tools are required for alignment and tree building:
+
+    MAFFT: Required for Multiple Sequence Alignment (MSA) (Step 3).
+    IQ-TREE2: Essential for Maximum Likelihood (ML) tree inference (Step 4).
+
+Programming Environments & Libraries:
+
+    Python 3: Required for .py scripts.
+    Biopython: Necessary Python library for handling sequence and tree files.
+
+Installation:
+
+    ```
+    pip install biopython
+    ```
+
+    R and RStudio: Required for running the analysis and visualization script (trees_visualization.rmd).
 
 # Instalation
 
