@@ -8,4 +8,4 @@ Follow these steps in order to reproduce the phylogenetic comparison:
 
 Select 10 bacteria species. Crucially, ensure that the chosen taxa have sufficient genetic distance for meaningful speciation time estimation. Download the Newick tree from:
 
-    timetree.org.
+    [timetree.org.](https://timetree.org)
