@@ -14,7 +14,7 @@ We selected 10 bacteria species. Crucially, we ensured that the chosen taxa have
 
 The fetch_16S_bacteria.py script enables fetching 10 sequences NCBI database.
 
-    ```
+    ```bash
     python3 fetch_16S_bacteria.py 
     ```
     
