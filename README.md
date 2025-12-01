@@ -12,7 +12,35 @@ We selected 10 bacteria species. Crucially, we ensured that the chosen taxa have
 
 ## Step 2: 16S rRNA sequence retrieval
 
-Running the sequence fetching script:
+The fetch_16S_bacteria.py script enables fetching 10 sequences NCBI database.
 
-    bash
+    ```bash
     python3 fetch_16S_bacteria.py 
+    ```
+    
+## Step 3: Multiple Sequence Alignment (MSA)
+
+The gen_lab4_aligment.py script performs the alignment, which is critical for accurate phylogenetic reconstruction.
+
+    ```bash
+    python3 gen_lab4_aligment.py
+    ```
+    
+## Step 4: Maximum Likelihood tree building
+
+The iqtree2.sh bash script enables building a tree for 16S rRNA sequences.
+
+    ```bash
+    bash iqtree2.sh
+    ```
+    
+## Step 5: Trees visualization and comparison
+
+The trees_visualization.rmd script for R enables visualization of both trees and computes the Robinson-Fould metric to quantify topological differences.
+
+# Instalation
+
+```bash
+git clone [https://github.com/barbarapawlowskaa/git](https://github.com/barbarapawlowskaa/gene_trees)
+cd gene_trees
+```
