@@ -1,0 +1,62 @@
+---
+title: "gen_lab4"
+output: html_document
+date: "2025-11-07"
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE)
+```
+
+
+```{r}
+library(ape)
+library(TreeDist)
+```
+
+
+```{r}
+
+t_time <- read.tree("timetree_bacteria.nwk")
+t_ml <- read.tree("bacteria_16S_aligned.fasta.treefile")
+
+fasta_file <- "bacteria_16S.fasta"
+fasta_lines <- readLines(fasta_file)
+id_map <- list()
+
+#Looping through FASTA lines to create ID to species mapping
+for (line in fasta_lines) {
+  if (startsWith(line, ">")) {
+    parts <- strsplit(line, " ")[[1]]
+    id <- sub(">", "", parts[1])
+    if (length(parts) >= 3) {
+      species <- paste(parts[2], parts[3], sep = "_")
+      id_map[[id]] <- species
+    }
+  }
+}
+
+#Renaming tips of ML tree using the species names
+for (i in seq_along(t_ml$tip.label)) {
+  j <- match(t_ml$tip.label[i], names(id_map))
+  if (!is.na(j)) {
+    t_ml$tip.label[i] <- id_map[[j]]
+  }
+}
+
+common <- intersect(t_time$tip.label, t_ml$tip.label)
+t_time <- drop.tip(t_time, setdiff(t_time$tip.label, common))
+t_ml <- drop.tip(t_ml, setdiff(t_ml$tip.label, common))
+
+rf <- TreeDist::RobinsonFoulds(t_time, t_ml, normalize = TRUE)
+cat("RF distance =", rf, "\n")
+
+
+par(cex = 0.9)
+cophyloplot(t_time, t_ml, label.offset = 0.15)
+title(main = "TimeTree vs Maximum Likelihood Tree")
+
+
+
+```
+
